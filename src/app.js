@@ -14,6 +14,7 @@ const imagesRoutes = require("./routes/images");
 const bookingsRoutes = require("./routes/bookings");
 const reviewsRoutes = require("./routes/reviews");
 const usersRoutes = require("./routes/users");
+const paymentRoutes = require("./routes/payment");
 
 applyMiddleware(app);
 
@@ -26,6 +27,7 @@ app.use(imagesRoutes);
 app.use(bookingsRoutes);
 app.use(reviewsRoutes);
 app.use(usersRoutes);
+app.use(paymentRoutes);
 
 // const PackageModel = require("./models/PackageModel");
 // const GuideModel = require("./models/GuideModel");
